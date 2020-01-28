@@ -5,8 +5,19 @@ void main() => runApp(MaterialApp(
     appBar: AppBar(
       title: Text("My first app"),
       backgroundColor: Colors.orange,
+      centerTitle: true,
     ),
-    backgroundColor: Colors.grey[400],
+    body: Center(
+      child: Text(
+          "Hello World",
+        style: TextStyle(
+          fontSize: 30,
+          color: Colors.grey[500]
+        ),
+      ),
+    ),
+    floatingActionButton: FloatingActionButton(onPressed: () {},
+    backgroundColor: Colors.orange,
+    child: Text("Click"),),
   ),
 ));
-
